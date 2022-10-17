@@ -41,8 +41,10 @@ app.get('/', (req, res) => {
 
 /* Routes */
 const buildRouter = require('./src/routes/build.route');
+const categoryRouter = require('./src/routes/category.route');
 
 app.use('/api/v1/build', buildRouter);
+app.use('/api/v1/categories', categoryRouter);
 /** */
 
 

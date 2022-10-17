@@ -1,0 +1,8 @@
+POST http://localhost:3003/api/v1/categories
+Content-Type: application/json
+
+{
+    "name" : "Category-ABC",
+    "status" : 2,
+    "description" : "test descriont for the above category"
+}
