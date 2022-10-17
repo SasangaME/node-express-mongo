@@ -10,4 +10,19 @@ async function insertCategory(category) {
     return result;
 }
 
-module.exports = { insertCategory }
+async function getAllCategories() {
+    const result = await Category.find();
+    return result;
+}
+
+async function getCategoyById(id) {
+    const result = await Category.findById(id);
+    return result;
+}
+
+async function updateCategory(id, category) {
+    const result = await Category.findByIdAndUpdate(id, category);
+    return result;
+}
+
+module.exports = { insertCategory, getAllCategories, getCategoyById, updateCategory }

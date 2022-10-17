@@ -6,3 +6,22 @@ Content-Type: application/json
     "status" : 2,
     "description" : "test descriont for the above category"
 }
+
+###
+
+GET http://localhost:3003/api/v1/categories
+
+###
+
+GET  http://localhost:3003/api/v1/categories/634cca8b6843727ac28bac91
+
+###
+
+PUT http://localhost:3003/api/v1/categories/634cca8b6843727ac28bac91
+Content-Type: application/json
+
+{
+    "name" : "my lovely category",
+    "status" : 1,
+    "description" : "my good vibes"
+}
